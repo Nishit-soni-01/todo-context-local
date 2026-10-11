@@ -18,7 +18,7 @@ function TodoItem({ todo }) {
   const save = () => {
     const trimmed = draft.trim()
     if (trimmed) updateTodo(todo.id, { todo: trimmed })
-    else setDraft(todo.todo) // reject empty edits
+    else setDraft(todo.todo) 
     setIsEditing(false)
   }
 
