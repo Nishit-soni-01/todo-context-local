@@ -1,10 +1,5 @@
 import { useEffect, useState } from 'react'
 
-/**
- * useState that persists to localStorage.
- * Reads lazily on first render (no flash of empty state) and fails safely
- * if storage is unavailable or contains corrupt JSON.
- */
 export function useLocalStorage(key, initialValue) {
   const [value, setValue] = useState(() => {
     try {
