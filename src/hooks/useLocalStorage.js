@@ -14,7 +14,7 @@ export function useLocalStorage(key, initialValue) {
     try {
       localStorage.setItem(key, JSON.stringify(value))
     } catch {
-      /* storage full or blocked - app keeps working in memory */
+     
     }
   }, [key, value])
 
